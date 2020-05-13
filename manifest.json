@@ -1,16 +1,18 @@
 {
     "manifest_version": 2,
-    "name": "NetCool Assistant",
+    "name": "Netcool Assistant",
     "description": "This extension allows you to auto input generic text into the 'Journaling' textbox of NetCool.",
     "version": "1.0",
-    "homepage_url": "https://github.com/gigoo25",
+    "homepage_url": "https://github.com/Gigoo25/NetcoolAssistant",
     "browser_action": {
         "default_icon": "favicon.png",
         "default_popup": "popup.html",
-        "default_title": "NetCool Assistant"
+        "default_title": "Netcool Assistant"
     },
+    "icons": { "16": "favicon.png",
+           "48": "favicon.png",
+          "128": "favicon.png" },
     "content_scripts": [{
-        "matches": ["<all_urls>"],
         "all_frames": true,
         "js":      ["scripts/content.js", "scripts/jquery.min.js"]
     }],
