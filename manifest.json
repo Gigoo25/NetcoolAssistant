@@ -13,6 +13,7 @@
            "48": "favicon.png",
           "128": "favicon.png" },
     "content_scripts": [{
+        "matches": ["<all_urls>"],
         "all_frames": true,
         "js":      ["scripts/content.js", "scripts/jquery.min.js"]
     }],
